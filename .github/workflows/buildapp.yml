@@ -83,9 +83,6 @@ jobs:
       - name: Set PATH
         run: echo "$(brew --prefix make)/libexec/gnubin" >> $GITHUB_PATH
 
-      - name: Install dav1d/libvpx build deps
-        run: brew install meson ninja
-
       - name: Setup Theos
         uses: actions/checkout@v7
         with:
